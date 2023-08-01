@@ -1,0 +1,11 @@
+<div ng-if="$ctrl.isNoItemRecord();" >
+<span class="availability-status bl-no-item">
+  This is a linking record. Use <i>Browse</i> to find orderable items <br>
+</span>
+</div>
+<div ng-if="$ctrl.isArchive();" >
+<span class="availability-status bl-browse-hierarchy">
+  <img class="avail-img" src="custom/IAMS_VU2/img/bl_hierarchy_browser.png" alt="Hierarchy browser icon">
+  <a  class="availability-status bl-browse-hierarchy" href="https://hviewer.bl.uk/IamsHViewer/Default.aspx?mdark={{$ctrl.getLad12()}}" target="_blank" alt="Browse this collection">Browse this collection</a>
+</span>
+</div>

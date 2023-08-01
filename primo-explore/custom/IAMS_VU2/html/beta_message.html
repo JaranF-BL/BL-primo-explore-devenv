@@ -1,0 +1,21 @@
+
+<div label="This is our new version" id="new-version" role="alert" aria-live="assertive" aria-atomic="true" ng-if="visible">
+	<div class="advice-body">
+		<h3 class="heading">This is the new version of our search</h3>
+		<div class="teaser">
+			<p>Please give us feedback using the tab on the right hand side.</p>
+<p>
+			<button type="button" class="more" ng-if="visible && !expanded" ng-click="expandCulturalAdvice()">More&hellip;</button>
+</p>		
+
+		</div>
+		<div class="additional" ng-if="visible && expanded">
+			<p>You can go back to the old version if you like.</p>
+		</div>
+		
+		<div class="dialog-button-row">	
+			<button type="button" class="md-button dialog-button" aria-label="Stay on new version" ng-click="acceptBeta()">Try the new version</button>
+			<button type="button" class="md-button dialog-button" aria-label="Back to old version" ng-click="rejectBeta()">Back to the old version</button>
+		</div>
+	</div>
+</div>

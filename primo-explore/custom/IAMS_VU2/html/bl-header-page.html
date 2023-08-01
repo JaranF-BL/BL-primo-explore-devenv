@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <!-- <script type="module" crossorigin src="./assets/index.f1a9f58c.js"></script> -->
+    <link rel="stylesheet" href="./assets/custom1.css">
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <header
+          role="banner"
+          aria-label="British Library"
+		  id="header-scrape"
+        >
+          <div class="container box-shadow">
+            <div class="header">
+              <div
+                class="site-logo"
+                itemscope=""
+                itemtype="https://schema.org/Organization"
+              >
+                <a
+                  href="https://www.bl.uk"
+                  class="site-logo__link"
+                  title="BRITISH LIBRARY"
+                  aria-label="BRITISH LIBRARY"
+                >
+                  <img
+                    src="https://www.bl.uk/britishlibrary/resources/global/images/bl_logo_100.gif"
+                    alt="THE BRITISH LIBRARY"
+                    itemprop="logo"
+                  />
+                </a>
+              </div>
+        
+              <div class="header__top">
+                <div class="header__util">
+                  <div class="login">
+                    <a
+                      class="login-link"
+                      href="https://www.bl.uk/Shibboleth.sso/Login?target=/business-and-management"
+                    >
+                      <span>Log in</span>
+                    </a>
+                    <span class="separator">|</span>
+                    <a
+                      class="login-link"
+                      href="https://newregister.bl.uk/Registration/BMRegistration?referringUrl=https://www.bl.uk/business-and-management?serviceId=2&amp;referringPage=https://www.bl.uk/business-and-management"
+                    >
+                      <span>Register</span>
+                    </a>
+                  </div>
+                  <div class="search-container">
+                    <form id="search-form" class="search-wrapper">
+                      <div class="form-row">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <label for="search-web-cat-input" class="sr-only">
+                              Search our website or catalogue
+                            </label>
+                            <input
+                              title="Search our website"
+                              id="search-web-cat-input"
+                              placeholder="Search our website"
+                              class="form-control"
+                              required=""
+                            />
+                            <button class="search-button">
+                              <span class="sr-only">
+                                Search form submit button
+                              </span>
+                              <svg
+                                focusable="false"
+                                role="img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                              >
+                                <path
+                                  fill="#fff"
+                                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                                ></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="form-inputs">
+                          <div class="form-group">
+                            <label for="Our website" class="form-check-label">
+                              <input
+                                title="Our website"
+                                id="Our website"
+                                name="searchoption"
+                                type="radio"
+                                class="form-check-input"
+                                value="http://explore.bl.uk/primo_library/libweb/action/dlSearch.do?vid=BLVU1&amp;institution=BL&amp;search_scope=LSCOP-WEBSITE&amp;tab=website_tab&amp;query=any,contains,"
+                                checked=""
+                              />
+                              Our website
+                            </label>
+                          </div>
+                          <div class="form-group">
+                            <label for="Main Catalogue" class="form-check-label">
+                              <input
+                                title="Main Catalogue"
+                                id="Main Catalogue"
+                                name="searchoption"
+                                type="radio"
+                                class="form-check-input"
+                                value="http://explore.bl.uk/primo_library/libweb/action/dlSearch.do?vid=BLVU1&amp;institution=BL&amp;search_scope=LSCOP-ALL&amp;tab=local_tab&amp;query=any,contains,"
+                              />
+                              Main Catalogue
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>        </div>
+        
+                <nav role="navigation" class="navbar">
+                  <ul class="nav">
+                      <li class="nav-item">
+                        <a tabindex="-1" href="https://www.bl.uk/catalogues-and-collections">
+                          Catalogues &amp; Collections
+                        </a>
+                
+                        <div class="nav-expander">
+                          <a role="button" class="link-expander" href="/">Go to link: </a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a tabindex="-1" href="https://www.bl.uk/discover-and-learn">
+                          Discover &amp; Learn
+                        </a>
+                
+                        <div class="nav-expander">
+                          <a role="button" class="link-expander" href="/">Go to link: </a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a tabindex="-1" href="https://www.bl.uk/whats-on">
+                          What&#x27;s On
+                        </a>
+                
+                        <div class="nav-expander">
+                          <a role="button" class="link-expander" href="/">Go to link: </a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a tabindex="-1" href="https://www.bl.uk/visit">
+                          Visit
+                        </a>
+                
+                        <div class="nav-expander">
+                          <a role="button" class="link-expander" href="/">Go to link: </a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a tabindex="-1" href="https://www.bl.uk/business-and-ip-centre">
+                          Business &amp; IP Centre
+                        </a>
+                
+                        <div class="nav-expander">
+                          <a role="button" class="link-expander" href="/">Go to link: </a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a tabindex="-1" href="https://www.bl.uk/shop">
+                          Visit the Shop
+                        </a>
+                
+                        <div class="nav-expander">
+                          <a role="button" class="link-expander" href="/">Go to link: </a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a tabindex="-1" href="https://www.bl.uk/join">
+                          Join
+                        </a>
+                
+                        <div class="nav-expander">
+                          <a role="button" class="link-expander" href="/">Go to link: </a>
+                        </div>
+                      </li>
+                  </ul>
+                </nav>      </div>
+            </div>
+        
+            <div class="masthead">
+              <div
+                class="site-logo"
+                itemscope=""
+                itemtype="https://schema.org/Organization"
+              >
+                <a
+                  href="https://www.bl.uk"
+                  class="site-logo__link"
+                  title="BRITISH LIBRARY"
+                  aria-label="BRITISH LIBRARY"
+                >
+                  <img
+                    src="https://www.bl.uk/britishlibrary/resources/global/images/bl_logo_100.gif"
+                    alt="THE BRITISH LIBRARY"
+                    itemprop="logo"
+                  />
+                </a>
+              </div>
+            
+              <div class="masthead__content">
+                <h1>
+                  Business and management
+                </h1>
+            
+                <button
+                  aria-label="Toggle navigation"
+                  aria-controls="primaryNavigation"
+                  aria-expanded="false"
+                  type="button"
+                  class="nav-toggle"
+                >
+                  <div class="nav-toggle__line"></div>
+                </button>
+              </div>
+            </div>    <div class="nav-mobile" hidden="">
+              <div class="nav-mobile__top">
+                <div
+                  class="site-logo"
+                  itemscope=""
+                  itemtype="https://schema.org/Organization"
+                >
+                  <a
+                    href="https://www.bl.uk"
+                    class="site-logo__link"
+                    title="BRITISH LIBRARY"
+                    aria-label="BRITISH LIBRARY"
+                  >
+                    <img
+                      src="https://www.bl.uk/britishlibrary/resources/global/images/bl_logo_100.gif"
+                      alt="THE BRITISH LIBRARY"
+                      itemprop="logo"
+                    />
+                  </a>
+                </div>
+            
+                <button
+                  id="mobile-close"
+                  class="nav-toggle change close"
+                  data-target="#hamburgerMenuToggle"
+                  aria-controls="hamburgerMenuToggle"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.725 20.1938L15.525 11.9625L23.7438 3.83751C24.0813 3.50001 24.0813 2.95001 23.7438 2.61251L21.4063 0.262512C21.2438 0.100012 21.025 0.0125122 20.7938 0.0125122C20.5625 0.0125122 20.3438 0.106262 20.1813 0.262512L12 8.36251L3.80626 0.268763C3.64376 0.106263 3.42501 0.0187626 3.19376 0.0187626C2.96251 0.0187626 2.74376 0.112513 2.58126 0.268763L0.250012 2.61876C-0.0874878 2.95626 -0.0874878 3.50626 0.250012 3.84376L8.46876 11.9688L0.275012 20.1938C0.112512 20.3563 0.0187624 20.575 0.0187624 20.8063C0.0187624 21.0375 0.106262 21.2563 0.275012 21.4188L2.61251 23.7688C2.78126 23.9375 3.00001 24.025 3.22501 24.025C3.44376 24.025 3.66876 23.9438 3.83751 23.7688L12 15.5688L20.1688 23.7625C20.3375 23.9313 20.5563 24.0188 20.7813 24.0188C21 24.0188 21.225 23.9375 21.3938 23.7625L23.7313 21.4125C23.8938 21.25 23.9875 21.0313 23.9875 20.8C23.9813 20.575 23.8875 20.3563 23.725 20.1938Z" fill="white"/>
+                  </svg>
+                </button>
+              </div>
+            
+              <nav class="nav-mobile__nav">
+                <div class="accordion">
+                    <div class="accordion__item">
+                      <div
+                        role="heading"
+                        class="accordion__heading"
+                        aria-level="3"
+                      >
+                        <div
+                          class="accordion__button"
+                          aria-disabled="false"
+                          aria-expanded="false"
+                          aria-controls="accordion__panel"
+                          role="button"
+                          tabindex="0"
+                        >
+                          <div class="title">
+                            <span>Catalogues &amp; Collections</span>
+                          </div>
+                        </div>
+                      </div>
+                        <div
+                          class="accordion__panel"
+                          role="region"
+                          aria-labelledby="accordion__heading"
+                          id="accordion__panel"
+                          hidden=""
+                        >
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Catalogues</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Search the Main Catalogue" href="https://explore.bl.uk">
+                                        Search the Main Catalogue
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Archives and Manuscripts" href="https://searcharchives.bl.uk">
+                                        Archives and Manuscripts
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Sound and Moving Image" href="http://cadensa.bl.uk">
+                                        Sound and Moving Image
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="British National Bibliography" href="https://bnb.bl.uk/">
+                                        British National Bibliography
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="All Catalogues" href="https://www.bl.uk/reshelp/findhelprestype/catblhold/all/allcat.html">
+                                        All Catalogues
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Digital Collections</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Business and Management" href="https://www.bl.uk/business-and-management">
+                                        Business and Management
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Digitised Manuscripts" href="https://www.bl.uk/manuscripts/">
+                                        Digitised Manuscripts
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Social Welfare" href="https://www.bl.uk/social-welfare">
+                                        Social Welfare
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Sounds" href="https://sounds.bl.uk">
+                                        Sounds
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Theses (EThOS)" href="https://ethos.bl.uk">
+                                        Theses (EThOS)
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Web Archive" href="https://www.bl.uk/collection-guides/uk-web-archive">
+                                        Web Archive
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="All Digital Collections" href="https://www.bl.uk/catalogues-and-collections/digital-collections">
+                                        All Digital Collections
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Getting Started</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Register for a Reader Pass" href="https://www.bl.uk/help/how-to-get-a-reader-pass">
+                                        Register for a Reader Pass
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Online help to use our collections" href="https://www.bl.uk/reshelp/inrrooms/stp/refteam/refteam/refcontacts.html ">
+                                        Online help to use our collections
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Using our Reading Rooms" href="https://www.bl.uk/reshelp/inrrooms/readingrooms.html">
+                                        Using our Reading Rooms
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Using the Main Catalogue" href="https://www.bl.uk/catalogues/search/help.html">
+                                        Using the Main Catalogue
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Overview of the Collection" href="https://www.bl.uk/subjects">
+                                        Overview of the Collection
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Order Copies of Documents" href="https://www.bl.uk/on-demand">
+                                        Order Copies of Documents
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Order Images from the Collection" href="https://www.bl.uk/digitisation-services">
+                                        Order Images from the Collection
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div
+                        role="heading"
+                        class="accordion__heading"
+                        aria-level="3"
+                      >
+                        <div
+                          class="accordion__button"
+                          aria-disabled="false"
+                          aria-expanded="false"
+                          aria-controls="accordion__panel"
+                          role="button"
+                          tabindex="0"
+                        >
+                          <div class="title">
+                            <span>Discover &amp; Learn</span>
+                          </div>
+                        </div>
+                      </div>
+                        <div
+                          class="accordion__panel"
+                          role="region"
+                          aria-labelledby="accordion__heading"
+                          id="accordion__panel"
+                          hidden=""
+                        >
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Learning</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Schools and Teachers" href="https://www.bl.uk/learning/schools-and-teachers">
+                                        Schools and Teachers
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Adults" href="https://www.bl.uk/learning/adults">
+                                        Adults
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Families and Community Groups" href="https://www.bl.uk/learning/families-and-community-groups">
+                                        Families and Community Groups
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Online Resources" href="https://www.bl.uk/learning/online-resources">
+                                        Online Resources
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="All Learning Resources" href="https://www.bl.uk/learning">
+                                        All Learning Resources
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Online Exhibitions</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Discovering Literature" href="https://www.bl.uk/discovering-literature">
+                                        Discovering Literature
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Discovering Children&#x27;s Books" href="https://www.bl.uk/childrens-books">
+                                        Discovering Children&#x27;s Books
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Discovering Sacred Texts" href="https://www.bl.uk/sacred-texts">
+                                        Discovering Sacred Texts
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="British Accents and Dialects" href="https://www.bl.uk/british-accents-and-dialects">
+                                        British Accents and Dialects
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="All Online Exhibitions" href="https://www.bl.uk/exhibitions">
+                                        All Online Exhibitions
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Highlights</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="The Tiger Who Came to Tea by Judith Kerr: sketches and original artwork" href="https://www.bl.uk/collection-items/the-tiger-who-came-to-tea-by-judith-kerr-sketches-and-original-artwork">
+                                        The Tiger Who Came to Tea by Judith Kerr: sketches and original artwork
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Sean&#x27;s Red Bike by Petronella Breinburg, illustrated by Error Lloyd" href="https://www.bl.uk/collection-items/seans-red-bike-by-petronella-breinburg-illustrated-by-errol-lloyd">
+                                        Sean&#x27;s Red Bike by Petronella Breinburg, illustrated by Error Lloyd
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div
+                        role="heading"
+                        class="accordion__heading"
+                        aria-level="3"
+                      >
+                        <div
+                          class="accordion__button"
+                          aria-disabled="false"
+                          aria-expanded="false"
+                          aria-controls="accordion__panel"
+                          role="button"
+                          tabindex="0"
+                        >
+                          <div class="title">
+                            <span>What&#x27;s On</span>
+                          </div>
+                        </div>
+                      </div>
+                        <div
+                          class="accordion__panel"
+                          role="region"
+                          aria-labelledby="accordion__heading"
+                          id="accordion__panel"
+                          hidden=""
+                        >
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Events at the Library</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Exhibitions" href="https://www.bl.uk/events?eventsubtype&#x3D;exhibition">
+                                        Exhibitions
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Events" href="https://www.bl.uk/events?audience&#x3D;cultural">
+                                        Events
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Free Events" href="https://www.bl.uk/events?isfree&#x3D;free">
+                                        Free Events
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Past Event Recordings" href="https://www.bl.uk/british-library-player">
+                                        Past Event Recordings
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Adult Courses" href="https://www.bl.uk/events/adult-learning-courses">
+                                        Adult Courses
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Tours" href="https://www.bl.uk/events?eventsubtype&#x3D;tour">
+                                        Tours
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="All listings &gt;" href="https://www.bl.uk/events">
+                                        All listings &gt;
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Events for</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Members" href="https://www.bl.uk/priority-booking/ ">
+                                        Members
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Schools and Colleges" href="https://www.bl.uk/events?area&#x3D;learning">
+                                        Schools and Colleges
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Business People" href="https://www.bl.uk/events?audience&#x3D;business">
+                                        Business People
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Families" href="https://www.bl.uk/events?eventsubtype&#x3D;family-activity">
+                                        Families
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>What&#x27;s On Highlight</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Alexander the Great: The Making of a Myth" href="https://www.bl.uk/events/alexander-the-great-the-making-of-a-myth">
+                                        Alexander the Great: The Making of a Myth
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div
+                        role="heading"
+                        class="accordion__heading"
+                        aria-level="3"
+                      >
+                        <div
+                          class="accordion__button"
+                          aria-disabled="false"
+                          aria-expanded="false"
+                          aria-controls="accordion__panel"
+                          role="button"
+                          tabindex="0"
+                        >
+                          <div class="title">
+                            <span>Visit</span>
+                          </div>
+                        </div>
+                      </div>
+                        <div
+                          class="accordion__panel"
+                          role="region"
+                          aria-labelledby="accordion__heading"
+                          id="accordion__panel"
+                          hidden=""
+                        >
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>British Library, 96 Euston Road, London NW1 2DB</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Mon - Sun" href="">
+                                        Mon - Sun
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Galleries, Reading Rooms, shop and catering opening times vary" href="">
+                                        Galleries, Reading Rooms, shop and catering opening times vary
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Full Opening Times" href="https://www.bl.uk/visit/opening-hours">
+                                        Full Opening Times
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Images</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="How to Get Here" href="https://www.bl.uk/visit/getting-here">
+                                        How to Get Here
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="How to use the Library" href="https://www.bl.uk/visit/how-to-use-the-library">
+                                        How to use the Library
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Reading Rooms" href="https://www.bl.uk/visit/reading-rooms">
+                                        Reading Rooms
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Exhibitions &amp; Events" href="https://www.bl.uk/whats-on">
+                                        Exhibitions &amp; Events
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Facilities" href="https://www.bl.uk/visit/facilities">
+                                        Facilities
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Eat, Drink, Shop" href="https://www.bl.uk/visit/eat-drink-shop">
+                                        Eat, Drink, Shop
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="School Visits" href="https://www.bl.uk/learning/visits-and-workshops">
+                                        School Visits
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Register for a Reader Pass" href="https://www.bl.uk/help/how-to-get-a-reader-pass">
+                                        Register for a Reader Pass
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div
+                        role="heading"
+                        class="accordion__heading"
+                        aria-level="3"
+                      >
+                        <div
+                          class="accordion__button"
+                          aria-disabled="false"
+                          aria-expanded="false"
+                          aria-controls="accordion__panel"
+                          role="button"
+                          tabindex="0"
+                        >
+                          <div class="title">
+                            <span>Business &amp; IP Centre</span>
+                          </div>
+                        </div>
+                      </div>
+                        <div
+                          class="accordion__panel"
+                          role="region"
+                          aria-labelledby="accordion__heading"
+                          id="accordion__panel"
+                          hidden=""
+                        >
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Training and Advice</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Workshops and Events" href="https://www.bl.uk/business-and-ip-centre/workshops-and-events">
+                                        Workshops and Events
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Webinars" href="https://www.bl.uk/events?audience&#x3D;business&amp;eventsubtype&#x3D;webinar">
+                                        Webinars
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Advice Clinics" href="https://www.bl.uk/business-and-ip-centre/information-clinics">
+                                        Advice Clinics
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Scale-up support" href="https://www.bl.uk/business-and-ip-centre/get-ready-for-business-growth">
+                                        Scale-up support
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Find a Centre Near You" href="https://www.bl.uk/business-and-ip-centre/national-network">
+                                        Find a Centre Near You
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Information and Resources</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Business and Management Portal" href="https://www.bl.uk/business-and-management">
+                                        Business and Management Portal
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Free Industry and IP Guides" href="https://www.bl.uk/business-and-ip-centre/industry-guides">
+                                        Free Industry and IP Guides
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Databases and Publications" href="https://electronicresources.bl.uk/sfxlcl41/az/londb">
+                                        Databases and Publications
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Research Service" href="https://www.bl.uk/business-and-ip-centre/our-research-service">
+                                        Research Service
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Business Blog" href="https://blogs.bl.uk/business/">
+                                        Business Blog
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="About Us" href="https://www.bl.uk/business-and-ip-centre/about">
+                                        About Us
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Business &amp; IP Centre &gt;" href="https://www.bl.uk/business-and-ip-centre">
+                                        Business &amp; IP Centre &gt;
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Business Articles</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Business plan FAQ" href="https://www.bl.uk/business-and-ip-centre/articles/business-plan-faq">
+                                        Business plan FAQ
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="How to start a business from scratch" href="https://www.bl.uk/business-and-ip-centre/articles/how-to-start-a-business-from-scratch">
+                                        How to start a business from scratch
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="What is intellectual property?" href="https://www.bl.uk/business-and-ip-centre/articles/what-is-intellectual-property">
+                                        What is intellectual property?
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Why you need to protect your intellectual property" href="https://www.bl.uk/business-and-ip-centre/articles/why-you-need-to-protect-your-intellectual-property">
+                                        Why you need to protect your intellectual property
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="More business articles &gt;" href="https://www.bl.uk/business-and-ip-centre/articles">
+                                        More business articles &gt;
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div
+                        role="heading"
+                        class="accordion__heading"
+                        aria-level="3"
+                      >
+                        <div
+                          class="accordion__button"
+                          aria-disabled="false"
+                          aria-expanded="false"
+                          aria-controls="accordion__panel"
+                          role="button"
+                          tabindex="0"
+                        >
+                          <div class="title">
+                            <span>Visit the Shop</span>
+                          </div>
+                        </div>
+                      </div>
+                        <div
+                          class="accordion__panel"
+                          role="region"
+                          aria-labelledby="accordion__heading"
+                          id="accordion__panel"
+                          hidden=""
+                        >
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>By Product</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Accessories" href="https://www.shop.bl.uk/collections/accessories">
+                                        Accessories
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Apparel" href="https://www.shop.bl.uk/collections/apparel">
+                                        Apparel
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Cards and Postcards" href="https://www.shop.bl.uk/collections/cards-and-postcards">
+                                        Cards and Postcards
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Food and Drink" href="https://www.shop.bl.uk/collections/food-and-drink">
+                                        Food and Drink
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Fun and Games" href="https://www.shop.bl.uk/collections/fun-and-games">
+                                        Fun and Games
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Homeware" href="https://www.shop.bl.uk/collections/homeware">
+                                        Homeware
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Jewellery" href="https://www.shop.bl.uk/collections/jewellery">
+                                        Jewellery
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Stationery" href="https://www.shop.bl.uk/collections/stationery">
+                                        Stationery
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Tech" href="https://www.shop.bl.uk/collections/tech">
+                                        Tech
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>By Theme</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Alice in Wonderland" href="https://www.shop.bl.uk/collections/alice-in-wonderland">
+                                        Alice in Wonderland
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Book Lovers" href="https://www.shop.bl.uk/collections/book-lovers">
+                                        Book Lovers
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Literary London" href="https://www.shop.bl.uk/collections/literary-london">
+                                        Literary London
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Love Libraries" href="https://www.shop.bl.uk/collections/love-libraries">
+                                        Love Libraries
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Map Lovers" href="https://www.shop.bl.uk/collections/map-lovers">
+                                        Map Lovers
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="The Wonderful Wizard of Oz" href="https://www.shop.bl.uk/collections/the-wonderful-wizard-of-oz">
+                                        The Wonderful Wizard of Oz
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Treasures of the British Library" href="https://www.shop.bl.uk/collections/treasures-of-the-british-library">
+                                        Treasures of the British Library
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Highlight</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Get 3 for 2 on all British Library Fiction" href="https://shop.bl.uk/collections/british-library-fiction">
+                                        Get 3 for 2 on all British Library Fiction
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div
+                        role="heading"
+                        class="accordion__heading"
+                        aria-level="3"
+                      >
+                        <div
+                          class="accordion__button"
+                          aria-disabled="false"
+                          aria-expanded="false"
+                          aria-controls="accordion__panel"
+                          role="button"
+                          tabindex="0"
+                        >
+                          <div class="title">
+                            <span>Join</span>
+                          </div>
+                        </div>
+                      </div>
+                        <div
+                          class="accordion__panel"
+                          role="region"
+                          aria-labelledby="accordion__heading"
+                          id="accordion__panel"
+                          hidden=""
+                        >
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Get Involved</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Become a Reader" href="https://www.bl.uk/help/how-to-get-a-reader-pass">
+                                        Become a Reader
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Become a Member" href="https://www.bl.uk/membership">
+                                        Become a Member
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Become a Patron" href="https://support.bl.uk/Page/Become-a-patron">
+                                        Become a Patron
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <div class="accordion__item">
+                                <div 
+                                  role="heading"
+                                  class="accordion__heading"
+                                  aria-level="3"
+                                >
+                                  <div
+                                    class="accordion__button"
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    aria-controls="accordion__panel"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    <div class="title">
+                                      <span>Images</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="accordion__panel"
+                                  role="region"
+                                  aria-labelledby="accordion__heading"
+                                  id="accordion__panel"
+                                  hidden=""
+                                >
+                                    <div class="title">
+                                      <a title="Become a Reader" href="https://www.bl.uk/help/how-to-get-a-reader-pass">
+                                        Become a Reader
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Become a Member" href="https://www.bl.uk/membership">
+                                        Become a Member
+                                      </a>
+                                    </div>
+                                    <div class="title">
+                                      <a title="Become a Patron" href="https://support.bl.uk/Page/Become-a-patron">
+                                        Become a Patron
+                                      </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </nav>
+            
+              <div class="search-container">
+                <form id="search-form" class="search-wrapper">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <label for="search-web-cat-input" class="sr-only">
+                          Search our website or catalogue
+                        </label>
+                        <input
+                          title="Search our website"
+                          id="search-web-cat-input"
+                          placeholder="Search our website"
+                          class="form-control"
+                          required=""
+                        />
+                        <button class="search-button">
+                          <span class="sr-only">
+                            Search form submit button
+                          </span>
+                          <svg
+                            focusable="false"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              fill="#fff"
+                              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="form-inputs">
+                      <div class="form-group">
+                        <label for="Our website" class="form-check-label">
+                          <input
+                            title="Our website"
+                            id="Our website"
+                            name="searchoption"
+                            type="radio"
+                            class="form-check-input"
+                            value="http://explore.bl.uk/primo_library/libweb/action/dlSearch.do?vid=BLVU1&amp;institution=BL&amp;search_scope=LSCOP-WEBSITE&amp;tab=website_tab&amp;query=any,contains,"
+                            checked=""
+                          />
+                          Our website
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label for="Main Catalogue" class="form-check-label">
+                          <input
+                            title="Main Catalogue"
+                            id="Main Catalogue"
+                            name="searchoption"
+                            type="radio"
+                            class="form-check-input"
+                            value="http://explore.bl.uk/primo_library/libweb/action/dlSearch.do?vid=BLVU1&amp;institution=BL&amp;search_scope=LSCOP-ALL&amp;tab=local_tab&amp;query=any,contains,"
+                          />
+                          Main Catalogue
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div></div>    <div class="nav-secondary">
+              <nav role="navigation" class="nav-secondary-nav">
+                <ul class="nav">
+                    <li class="nav-item">
+                      <a title="Home" href="https://www.bl.uk/business-and-management">
+                        Home
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a title="About" href="https://www.bl.uk/business-and-management/about">
+                        About
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a title="Collection items" href="https://www.bl.uk/business-and-management/collection-items">
+                        Collection items
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a title="Editorials" href="https://www.bl.uk/business-and-management/editorials">
+                        Editorials
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a title="Management thinkers" href="https://www.bl.uk/business-and-management/management-thinkers">
+                        Management thinkers
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a title="Terms and Conditions" href="https://www.bl.uk/business-and-management/terms-and-conditions">
+                        Terms and Conditions
+                      </a>
+                    </li>
+                </ul>
+                <ul class="nav-more" hidden="true">
+                  <li class="nav-item nav-item--more">
+                    <a href="#" class="nav-item--more_link" title="More" aria-expanded="false" aria-label="More">
+                      More
+                    </a>
+                    <ul class="more-menu hidden" aria-hidden="true"></ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>    
+            <div class="login-mobile">
+              <div class="login">
+                <a
+                  class="login-link"
+                  href="https://www.bl.uk/Shibboleth.sso/Login?target=/business-and-management"
+                >
+                  <span>Log in</span>
+                </a>
+                <span class="separator">|</span>
+                <a
+                  class="login-link"
+                  href="https://newregister.bl.uk/Registration/BMRegistration?referringUrl=https://www.bl.uk/business-and-management?serviceId=2&amp;referringPage=https://www.bl.uk/business-and-management"
+                >
+                  <span>Register</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>    </div>
+    
+  </body>
+</html>
